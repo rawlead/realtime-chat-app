@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-       "dev": "node server.js",
-       "build": "next build",
-       "start": "NODE_ENV=production node server.js"
-   },
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js",
+    "export": "npm run build && next export"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -24,12 +25,11 @@
     "react-dom": "^16.8.6",
     "sentiment": "^5.0.1"
   },
-
   "consumedServices": {
-  "autosave": {
-    "versions": {
-      "1.0.0": "consumeAutosave"
+    "autosave": {
+      "versions": {
+        "1.0.0": "consumeAutosave"
+      }
     }
   }
-}
 }

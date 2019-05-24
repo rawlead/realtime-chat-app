@@ -1,3 +1,6 @@
+.DS_Store
 .env
+.next
 package-lock.json
 node_modules
+out
